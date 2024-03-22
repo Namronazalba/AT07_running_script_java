@@ -1,0 +1,17 @@
+IMEI: 868028032334700
+Lat: 16.5122831
+Long: 120.6310551
+Timestamp: 0024-03-04 15:35:52.616
+Status: driving
+Direction: 0
+Distance km: 0
+Speed: 1
+Fuel value: 0
+Color state: 0
+Tire preassure: 0
+Temp sensor: 0
+Brand: 0
+Model: 0
+GSM: 18
+Address: Maharlika Street,Daclan, Tublay, Benguet,  Cordillera Administrative Region, 2601, Philippines
+
