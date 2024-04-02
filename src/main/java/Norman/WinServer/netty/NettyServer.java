@@ -1,6 +1,7 @@
 package Norman.WinServer.netty;
 
-import Norman.WinServer.netty.ServerHandler;
+
+import Norman.WinServer.geofence.GeofenceHandler;
 import io.netty.bootstrap.ServerBootstrap;
 import io.netty.channel.ChannelFuture;
 import io.netty.channel.ChannelInitializer;
@@ -27,7 +28,8 @@ public class NettyServer {
                     .childHandler(new ChannelInitializer<SocketChannel>() {
                         @Override
                         public void initChannel(SocketChannel ch) {
-                            ch.pipeline().addLast(new ServerHandler());
+                            ch.pipeline().addLast(executorGroup, new GeofenceHandler());
+                            ch.pipeline().addLast(executorGroup, new ServerHandler());
                         }
                     })
                     .option(ChannelOption.SO_BACKLOG, 128)

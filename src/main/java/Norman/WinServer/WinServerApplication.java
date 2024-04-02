@@ -30,7 +30,6 @@ public class WinServerApplication {
                     .childHandler(new ChannelInitializer<SocketChannel>() {
                         @Override
                         public void initChannel(SocketChannel ch) {
-
                             ch.pipeline().addLast(new ServerHandler());
                         }
                     })
